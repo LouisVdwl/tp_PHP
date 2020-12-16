@@ -1,6 +1,6 @@
 # M3104 - TP MVC
 
-L'objectif de ce TP est de mettre en pratique les diverses compétences acquises au cours du module 3104 ([voir le repo ici](https://github.com/thomascaillier/m3104)).
+L'objectif de ce TP est de mettre en pratique les diverses compétences acquises au cours du module 3104.
 
 La plupart des notions abordées seront nécessaires, mais la nouvelle notion à mettre en place est le pattern MVC.
 Pour cela, nous allons développer un gestionnaire de prêts dans une bibliothèque.
@@ -21,6 +21,11 @@ Vous créerez les interfaces suivantes :
 ### Édition
 - Édition d'un locataire
 - Édition d'une voiture
+
+###Utilisateurs
+- Création d'un utilisateur
+- Connexion d'un utilisateur
+- Modification d'un utilisateur
 
 ### Pages
 - Page d'un locataire et de la liste de ses locations
