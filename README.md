@@ -5,7 +5,7 @@ L'objectif de ce TP est de mettre en pratique les diverses compétences acquises
 La plupart des notions abordées seront nécessaires, mais la nouvelle notion à mettre en place est le pattern MVC.
 Pour cela, nous allons développer un gestionnaire de prêts dans une bibliothèque.
 
-## Gestionnaire de prêts de bibliothèque
+## Gestionnaire de location de voiture
 Vous créerez les interfaces suivantes :
 
 ### Ajouts
