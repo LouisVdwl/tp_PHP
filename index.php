@@ -8,17 +8,17 @@ if(sizeof($args) == 1 && empty($args[0])){
 } else if ($args[0] == "books") {
 	
 	// Controlleur books
-	require_once("controllers/books.controller.php");
+	require_once("controllers/car.controller.php");
 	
 	if(sizeof($args) == 2 && $args[1] == "book"){
 		
 		// Action book
-		book();
+		car();
 
 	} else {
 
 		// Action listBooks
-		listBooks();
+		listCars();
 
 	}
 }

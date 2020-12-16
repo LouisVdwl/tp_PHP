@@ -1,9 +1,9 @@
 <?php
 
-function listBooks(){
+function listCars(){
 	echo "Liste des livres";
 }
 
-function book(){
+function car(){
 	echo "Livre id=".$_GET["id"];
 }
