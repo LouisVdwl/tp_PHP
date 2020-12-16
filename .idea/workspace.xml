@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7cb0bf10-ebb4-497b-8bb2-07e02a1bad1f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/controllers/location.controller.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/tenant.controller.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/user.controller.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/location.model.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/tenant.model.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/user.model.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/tenant.controller.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/tenant.model.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +41,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1608130298572</updated>
-      <workItem from="1608130301924" duration="2074000" />
+      <workItem from="1608130301924" duration="3854000" />
     </task>
     <servers />
   </component>
