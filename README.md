@@ -9,22 +9,21 @@ Pour cela, nous allons développer un gestionnaire de prêts dans une bibliothè
 Vous créerez les interfaces suivantes :
 
 ### Ajouts
-- Ajout d'un nouveau lecteur
-- Ajout d'un nouveau livre
-- Ajout d'une location (une location = un lecteur loue un livre)
+- Ajout d'un nouveau locataire
+- Ajout d'une nouvelle voiture
+- Ajout d'une location (une location = un locataire loue une voiture)
 
 ### Listes
-- Liste des lecteurs
-- Liste des livres
+- Liste des locataires
+- Liste des voitures
 - Liste des locations
 
 ### Édition
-- Édition d'un lecteur
-- Édition d'un livre
+- Édition d'un locataire
+- Édition d'une voiture
 
 ### Pages
-- Page d'un lecteur et de la liste de ses locations
-- Page d'un livre et de la liste de ses locations
+- Page d'un locataire et de la liste de ses locations
+- Page d'une voiture et de la liste de ses locations
 - Dans chacune des pages, on pourra supprimer les locations
-  
-Le script SQL de création des tables est fourni.
+ 
