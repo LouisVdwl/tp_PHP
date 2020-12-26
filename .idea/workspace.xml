@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7cb0bf10-ebb4-497b-8bb2-07e02a1bad1f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/models/utils.connexionBDD.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/user.connexion.view.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/user.inscription.view.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/tenant.controller.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/tenant.model.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/user.controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/user.controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/user.model.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/user.model.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +19,12 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/views/user.inscription.view.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/models/user.model.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/views/user.connexion.view.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/controllers/user.controller.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
   </component>
   <component name="ProjectId" id="1lk9btyx3wZQ2zkXsFWBzBo8REt" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -30,8 +38,13 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/views" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\tp_PHP\views" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -42,6 +55,8 @@
       <option name="presentableId" value="Default" />
       <updated>1608130298572</updated>
       <workItem from="1608130301924" duration="3854000" />
+      <workItem from="1608990635035" duration="2084000" />
+      <workItem from="1608992911838" duration="5043000" />
     </task>
     <servers />
   </component>
@@ -58,5 +73,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
