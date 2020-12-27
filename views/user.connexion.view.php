@@ -8,6 +8,7 @@
 </head>
 <body>
     <h1>Connexion</h1>
+    <a href="user.inscription.view.php">Inscription</a>
     <form method="post" action="../controllers/user.controller.php">
         <input placeholder="Entrer votre adresse e-mail" type="email" name="mail" required>
         <input placeholder="Mot de passe" name="password" type="password" required>

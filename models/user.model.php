@@ -12,15 +12,30 @@ require("utils.connexionBDD.php");
  * @param $pass
  */
 function addUser($nom, $prenom, $mail, $pass){
-    $stmt = connect() ->prepare("INSERT INTO user (first_name, name, mail, password) VALUES (:first_name, :name, :mail, :password)");
 
-    $stmt->bindParam(':name', $nom);
-    $stmt->bindParam(':first_name', $prenom);
-    $stmt->bindParam(':mail', $mail);
-    $stmt -> bindParam(':password', $pass);
+    //Vérification si un User existe déjà avec cette adresse mail
+    $sql =  "SELECT count(id) FROM user WHERE mail LIKE '". $mail . "'";
+    $resultMail = connect() -> query($sql);
+    $res = $resultMail -> fetch();
 
-    $stmt->execute();
-    $stmt -> closeCursor();
+    //Si l'e-mail n'est pas déjà utilisé
+    if($res == 0){
+        $stmt = connect() ->prepare("INSERT INTO user (first_name, name, mail, password) VALUES (:first_name, :name, :mail, :password)");
+
+        $stmt->bindParam(':name', $nom);
+        $stmt->bindParam(':first_name', $prenom);
+        $stmt->bindParam(':mail', $mail);
+        $stmt -> bindParam(':password', $pass);
+
+        $stmt->execute();
+        $stmt -> closeCursor();
+
+        //Redirection vers la page de connexion
+        header('Location: ../views/user.connexion.php');
+    }else{
+        header('Location: ../views/user.inscription.view.php');
+        echo "inscription impossible !";
+    }
 }
 
 /**
@@ -38,8 +53,6 @@ function connexionUser($mail, $pass){
         if(password_verify($pass, $res["password"])){
             $ret = $res["id"];
         }
-    } else {
-        echo "Aucune connexion ne correspond";
     }
     return $ret;
 

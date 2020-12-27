@@ -8,6 +8,7 @@
 </head>
 <body>
     <h1>Inscription</h1>
+    <a href="user.connexion.view.php">Connexion</a>
     <form method="post" action="../controllers/user.controller.php">
         <input placeholder="Entrer votre prénom" type="text" name="first_name" required>
         <input placeholder="Entrer votre nom" type="text" name="name" required>

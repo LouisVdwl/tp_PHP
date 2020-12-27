@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7cb0bf10-ebb4-497b-8bb2-07e02a1bad1f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/models/utils.connexionBDD.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/user.connexion.view.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/user.inscription.view.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/user.controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/user.controller.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/user.model.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/user.model.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/user.connexion.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/user.connexion.view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/user.inscription.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/user.inscription.view.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +38,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/views" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -56,7 +56,9 @@
       <updated>1608130298572</updated>
       <workItem from="1608130301924" duration="3854000" />
       <workItem from="1608990635035" duration="2084000" />
-      <workItem from="1608992911838" duration="5043000" />
+      <workItem from="1608992911838" duration="5232000" />
+      <workItem from="1609077347286" duration="1901000" />
+      <workItem from="1609079274926" duration="887000" />
     </task>
     <servers />
   </component>

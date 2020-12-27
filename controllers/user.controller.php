@@ -13,7 +13,14 @@ if(isset($_POST["inscription"])){
 
 //Connexion d'un user
 if(isset($_POST["connexion"])){
-    connexionUser($_POST["mail"], $_POST["password"]);
+    $state = connexionUser($_POST["mail"], $_POST["password"]);
+    // Si la connexion a échouée
+    if($state == 0){
+        header('Location: ../views/user.connexion.view.php');
+    }else{
+        setcookie("idUser", $state);
+        echo "Connexion réussie !";
+    }
 }
 
 
