@@ -33,6 +33,7 @@ function addUser($nom, $prenom, $mail, $pass){
         //Redirection vers la page de connexion
         header('Location: ../views/user.connexion.php');
     }else{
+
         header('Location: ../views/user.inscription.view.php');
         echo "inscription impossible !";
     }
@@ -57,4 +58,8 @@ function connexionUser($mail, $pass){
     return $ret;
 
 }
+
+
+
+
 

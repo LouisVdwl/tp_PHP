@@ -3,11 +3,15 @@
 require("../models/user.model.php");
 
 //Ajout d'un user
+
+
 if(isset($_POST["inscription"])){
+
     $prenom = $_POST["first_name"];
     $name = $_POST["name"];
     $mail = $_POST["mail"];
     $password = password_hash($_POST["password"], PASSWORD_DEFAULT);
+
     addUser($name, $prenom, $mail, $password);
 }
 
@@ -22,5 +26,6 @@ if(isset($_POST["connexion"])){
         echo "Connexion réussie !";
     }
 }
-
-
+function listUser(){
+    echo "oui";
+}
