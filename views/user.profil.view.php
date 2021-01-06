@@ -21,9 +21,10 @@
 </form>
 <form method="post" action="../controllers/user.controller.php">
     <input name="password" type="password" placeholder="Changer mon mot de passe">
-    <input name="changePass" type="hidden">
+    <input name="changePassword" type="hidden">
     <input type="submit" value="Changer le mot de passe">
 </form>
 </body>
 </html>
+
 

@@ -27,6 +27,12 @@ if(isset($_POST["connexion"])){
 if(isset($_POST["modifyProfil"])){
     modifyUser($_COOKIE["idUser"], $_POST["first_name"], $_POST["name"], $_POST["mail"]);
     header("Location: ../views/user.profil.view.php");
+
+}//Modification du password du user
+if(isset($_POST["changePassword"])){
+    changePassword($_COOKIE["idUser"], password_hash($_POST["password"], PASSWORD_DEFAULT));
+    echo "ok";
+    header("Location: ../views/user.profil.view.php");
 }
 
 //Fonction qui permet d'avoir les infos d'un user par son ID

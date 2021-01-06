@@ -77,7 +77,14 @@ function modifyUser($id, $first_name, $name, $mail){
 }
 
 function changePassword($id, $password){
+    $sql = "UPDATE user set password = :password WHERE id = :id";
+    $req = connect() -> prepare($sql);
 
+    $req -> bindParam(":password", $password);
+    $req -> bindParam(":id", $id);
+
+    $req -> execute();
+    $req -> closeCursor();
 }
 
 
