@@ -9,23 +9,25 @@ Pour cela, nous allons développer un gestionnaire de prêts dans une bibliothè
 Vous créerez les interfaces suivantes :
 
 ### Ajouts
-- Inscription d'un user
-- Ajout d'une nouvelle voiture
+- Inscription d'un user :heavy_check_mark:
+- Ajout d'une nouvelle voiture :heavy_check_mark:
 - Ajout d'une location (une location = un locataire loue une voiture)
 
 ### Listes
 - Liste des locataires
 - Liste des voitures
 - Liste des locations (en ce moment)
+- Liste des utilisateurs
 
 ### Édition
 - Édition d'une voiture
 - Edition d'une location
+- Edition d'un utilisateur :heavy_check_mark:
 
 ### Utilisateurs
-- Création d'un utilisateur
-- Connexion d'un utilisateur
-- Modification d'un utilisateur
+- Création d'un utilisateur :heavy_check_mark:
+- Connexion d'un utilisateur :heavy_check_mark:
+
 
 ### Pages
 - Page d'un locataire et de la liste de ses locations
