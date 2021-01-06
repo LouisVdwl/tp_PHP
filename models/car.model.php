@@ -13,3 +13,13 @@ function addCar($nom, $mark, $color, $price){
     $stmt -> closeCursor();
 
 }
+function listCar(){
+    $sql = connect() -> query("SELECT * from car");
+    $res = array();
+
+    while ($row = $sql->fetch()){
+        $res[] = $row;
+    }
+    return $res ;
+
+}
