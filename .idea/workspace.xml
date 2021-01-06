@@ -6,7 +6,10 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/car.controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/car.controller.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/location.controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/location.controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/user.controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/user.controller.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/location.model.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/location.model.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/user.model.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/user.model.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/utils.connexionBDD.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/utils.connexionBDD.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/addCar.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/car.add.view.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/car.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/car.view.php" afterDir="false" />
     </list>
@@ -72,7 +75,7 @@
       <workItem from="1609772279796" duration="1342000" />
       <workItem from="1609863482924" duration="3023000" />
       <workItem from="1609934627369" duration="1772000" />
-      <workItem from="1609937004927" duration="3638000" />
+      <workItem from="1609937004927" duration="4362000" />
     </task>
     <servers />
   </component>

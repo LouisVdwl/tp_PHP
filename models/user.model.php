@@ -33,6 +33,7 @@ function addUser($nom, $prenom, $mail, $pass){
         //Redirection vers la page de connexion
         header('Location: ../views/user.connexion.php');
     }else{
+
         header('Location: ../views/user.inscription.view.php');
         echo "inscription impossible !";
     }
@@ -62,6 +63,7 @@ function getUserById($idUser){
     $result = connect() -> query(sql);
     return $result;
 }
+
 
 // SELECT id, password FROM user WHERE mail LIKE 'mdpabdc@gmail.com'
 // SELECT id, password FROM user WHERE mail LIKE 'mdpabdc@gmail.com'

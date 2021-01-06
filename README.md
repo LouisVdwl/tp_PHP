@@ -17,15 +17,17 @@ Vous créerez les interfaces suivantes :
 - Liste des locataires
 - Liste des voitures
 - Liste des locations (en ce moment)
+- Liste des utilisateurs
 
 ### Édition
 - Édition d'une voiture
 - Edition d'une location
+- Edition d'un utilisateur
 
 ### Utilisateurs
 - Création d'un utilisateur
 - Connexion d'un utilisateur
-- Modification d'un utilisateur
+
 
 ### Pages
 - Page d'un locataire et de la liste de ses locations
