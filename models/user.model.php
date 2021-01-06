@@ -19,7 +19,7 @@ function addUser($nom, $prenom, $mail, $pass){
     $res = $resultMail -> fetch();
 
     //Si l'e-mail n'est pas déjà utilisé
-    if($res == 0){
+    if($res[0] == 0){
         $stmt = connect() ->prepare("INSERT INTO user (first_name, name, mail, password) VALUES (:first_name, :name, :mail, :password)");
 
         $stmt->bindParam(':name', $nom);
@@ -48,13 +48,23 @@ function addUser($nom, $prenom, $mail, $pass){
 function connexionUser($mail, $pass){
     $ret = 0;
     $sql =  "SELECT id, password FROM user WHERE mail LIKE '". $mail . "'";
-    if($result = connect() -> query($sql)){
-        $res = $result -> fetch();
-        if(password_verify($pass, $res["password"])){
-            $ret = $res["id"];
-        }
+    $result = connect() -> query($sql);
+    $res = $result -> fetch();
+    if(password_verify($pass, $res["password"])){
+        $ret = $res["id"];
     }
     return $ret;
-
 }
+
+function getUserById($idUser){
+    $id = $idUser;
+    $sql = "SELECT * FROM user WHERE id = " . $id;
+    $result = connect() -> query(sql);
+    return $result;
+}
+
+// SELECT id, password FROM user WHERE mail LIKE 'mdpabdc@gmail.com'
+// SELECT id, password FROM user WHERE mail LIKE 'mdpabdc@gmail.com'
+
+
 

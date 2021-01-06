@@ -16,11 +16,13 @@ if(isset($_POST["connexion"])){
     $state = connexionUser($_POST["mail"], $_POST["password"]);
     // Si la connexion a échouée
     if($state == 0){
-        header('Location: ../views/user.connexion.view.php');
+        //header('Location: ../views/user.connexion.view.php');
     }else{
         setcookie("idUser", $state);
         echo "Connexion réussie !";
     }
 }
 
-
+if(isset($_POST["displayProfil"])){
+    echo getUserById($_COOKIE["idUser"]);
+}
