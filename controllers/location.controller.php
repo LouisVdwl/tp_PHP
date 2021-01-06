@@ -12,7 +12,7 @@ if (isset($_POST["addLocation"])) {
 
 
     addLocation($car_id, $user_id, $start_date, $end_date);
-    header("Location: ../views/location.add.view.php");
+
 }
 //recup donnée du model
 //require vue
