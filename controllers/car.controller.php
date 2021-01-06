@@ -17,5 +17,5 @@ if(isset($_POST["addCar"])){
     $color = $_POST["color"];
     $price = $_POST["price"];
     addCar($name, $mark, $color, $price);
-    header("Location: ../views/addCar.view.php");
+    header("Location: ../views/car.add.view.php");
 }

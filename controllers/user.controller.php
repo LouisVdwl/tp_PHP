@@ -16,13 +16,20 @@ if(isset($_POST["connexion"])){
     $state = connexionUser($_POST["mail"], $_POST["password"]);
     // Si la connexion a échouée
     if($state == 0){
-        //header('Location: ../views/user.connexion.view.php');
+        header('Location: ../views/user.connexion.view.php');
     }else{
-        setcookie("idUser", $state);
-        echo "Connexion réussie !";
+        setcookie("idUser", $state, time()+604800, "/", "localhost");
+        header("Location: ../views/user.profil.view.php");
     }
 }
 
-if(isset($_POST["displayProfil"])){
-    echo getUserById($_COOKIE["idUser"]);
+//Modification des infos du user
+if(isset($_POST["modifyProfil"])){
+    modifyUser($_COOKIE["idUser"], $_POST["first_name"], $_POST["name"], $_POST["mail"]);
+    header("Location: ../views/user.profil.view.php");
+}
+
+//Fonction qui permet d'avoir les infos d'un user par son ID
+function getProfil($id){
+    return getUserById($id);
 }
