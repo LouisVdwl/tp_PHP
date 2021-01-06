@@ -15,6 +15,7 @@ $datas = getCars();
 <h1>Liste des voitures</h1>
 <form method="post" action="../views/location.add.view.php">
     <?php
+
     foreach ($datas as $data){
         echo '<ul>';
             echo '<li>Nom :  '.$data["name"].' </li>';
@@ -23,7 +24,8 @@ $datas = getCars();
             echo '<li>Prix : '.$data["price"].' </li>';
 
         echo '</ul>';
-        echo'<input name="car_id" value="'.$_POST["id"].'" type="hidden">';
+        echo'<input name="car_id" value="'.$data["id"].'" type="hidden">';
+
     }
     ?>
     <input value="Louer" type="submit">

@@ -9,12 +9,14 @@
     <title> Ajouter location </title>
 </head>
 <body>
-<h1>Ajouter une location</h1>
+<h1>Louer</h1>
 <form method="post" action="../controllers/location.controller.php">
 
     <?php
-        echo  '<input  name="date_start" type="date" min="'.getdate().'"  required>';
-        echo  '<input  name="end_date" type="date" min="'.getdate().'"  required>';
+        $date = date('Y-m-d');
+
+        echo  '<input  name="start_date" type="date" min="'.$date.'"  required>';
+        echo  '<input  name="end_date" type="date" min="'.$date.'"  required>';
         echo '<input name="car_id" value="'.$_POST["car_id"].'" value type="hidden">';
     ?>
 
@@ -22,4 +24,4 @@
     <input value="Ajouter" type="submit">
 </form>
 </body>
-</html>
+</html>-
