@@ -18,8 +18,10 @@ if(isset($_POST["addCar"])){
     $price = $_POST["price"];
     addCar($name, $mark, $color, $price);
     header("Location: ../views/car.add.view.php");
+
 }
 
 function getCars(){
     return listCar();
+
 }

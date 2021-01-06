@@ -33,7 +33,6 @@ function addUser($nom, $prenom, $mail, $pass){
         //Redirection vers la page de connexion
         header('Location: ../views/user.connexion.php');
     }else{
-
         header('Location: ../views/user.inscription.view.php');
         echo "inscription impossible !";
     }
@@ -60,13 +59,34 @@ function connexionUser($mail, $pass){
 function getUserById($idUser){
     $id = $idUser;
     $sql = "SELECT * FROM user WHERE id = " . $id;
-    $result = connect() -> query(sql);
-    return $result;
+    $result = connect() -> query($sql);
+    return $result -> fetch();
 }
 
+function modifyUser($id, $first_name, $name, $mail){
+    $sql = "UPDATE user set first_name = :first_name, name = :name, mail = :mail WHERE id = :id";
+    $req = connect() -> prepare($sql);
 
-// SELECT id, password FROM user WHERE mail LIKE 'mdpabdc@gmail.com'
-// SELECT id, password FROM user WHERE mail LIKE 'mdpabdc@gmail.com'
+    $req -> bindParam(":first_name", $first_name);
+    $req -> bindParam(":name", $name);
+    $req -> bindParam(":mail", $mail);
+    $req -> bindParam(":id", $id);
+
+    $req -> execute();
+    $req -> closeCursor();
+}
+
+function changePassword($id, $password){
+    $sql = "UPDATE user set password = :password WHERE id = :id";
+    $req = connect() -> prepare($sql);
+
+    $req -> bindParam(":password", $password);
+    $req -> bindParam(":id", $id);
+
+    $req -> execute();
+    $req -> closeCursor();
+}
+
 
 
 
