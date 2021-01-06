@@ -2,16 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7cb0bf10-ebb4-497b-8bb2-07e02a1bad1f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/views/car.list.view.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/views/location.add.view.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/car.controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/car.controller.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/location.controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/location.controller.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/user.controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/user.controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/car.model.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/car.model.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/location.model.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/location.model.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/user.model.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/user.model.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/utils.connexionBDD.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/utils.connexionBDD.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/addCar.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/car.add.view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/car.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/car.view.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +76,7 @@
       <workItem from="1609772279796" duration="1342000" />
       <workItem from="1609863482924" duration="3023000" />
       <workItem from="1609934627369" duration="1772000" />
-      <workItem from="1609937004927" duration="4362000" />
+      <workItem from="1609937004927" duration="8607000" />
     </task>
     <servers />
   </component>
