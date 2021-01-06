@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7cb0bf10-ebb4-497b-8bb2-07e02a1bad1f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/views/user.profil.view.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/location.add.view.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/user.controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/user.controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/user.model.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/user.model.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/car.controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/car.controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/location.controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/location.controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/location.model.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/location.model.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/addCar.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/car.add.view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/car.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/car.view.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,10 +22,10 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/views/user.inscription.view.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/views/addCar.view.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/models/user.model.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/views/user.inscription.view.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/views/user.connexion.view.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/views/car.add.view.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/controllers/user.controller.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
   </component>
   <component name="ProjectId" id="1lk9btyx3wZQ2zkXsFWBzBo8REt" />
@@ -37,7 +40,14 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/views" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -62,6 +72,7 @@
       <workItem from="1609772279796" duration="1342000" />
       <workItem from="1609863482924" duration="3023000" />
       <workItem from="1609934627369" duration="1772000" />
+      <workItem from="1609937004927" duration="3638000" />
     </task>
     <servers />
   </component>
