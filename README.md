@@ -11,11 +11,11 @@ Vous créerez les interfaces suivantes :
 ### Ajouts
 - Inscription d'un user :heavy_check_mark:
 - Ajout d'une nouvelle voiture :heavy_check_mark:
-- Ajout d'une location (une location = un locataire loue une voiture)
+- Ajout d'une location (une location = un locataire loue une voiture) :wavy_dash:
 
 ### Listes
 - Liste des locataires
-- Liste des voitures
+- Liste des voitures :wavy_dash:
 - Liste des locations (en ce moment)
 - Liste des utilisateurs
 
