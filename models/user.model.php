@@ -31,7 +31,7 @@ function addUser($nom, $prenom, $mail, $pass){
         $stmt -> closeCursor();
 
         //Redirection vers la page de connexion
-        header('Location: ../views/user.connexion.php');
+        header('Location: ../views/user.connexion.view.php');
     }else{
         header('Location: ../views/user.inscription.view.php');
         echo "inscription impossible !";
@@ -85,6 +85,12 @@ function changePassword($id, $password){
 
     $req -> execute();
     $req -> closeCursor();
+}
+
+function getAllUser(){
+    $sql = "SELECT * FROM user";
+    $result = connect() -> query($sql);
+    return $result;
 }
 
 

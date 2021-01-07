@@ -25,8 +25,12 @@ if(isset($_POST["connexion"])){
 
 //Modification des infos du user
 if(isset($_POST["modifyProfil"])){
-    modifyUser($_COOKIE["idUser"], $_POST["first_name"], $_POST["name"], $_POST["mail"]);
-    header("Location: ../views/user.profil.view.php");
+    modifyUser($_POST["idUser"], $_POST["first_name"], $_POST["name"], $_POST["mail"]);
+    if(isset($_POST["admin"])){
+        header("Location: ../views/user.list.view.php");
+    }else{
+        header("Location: ../views/user.profil.view.php");
+    }
 
 }//Modification du password du user
 if(isset($_POST["changePassword"])){
@@ -38,4 +42,9 @@ if(isset($_POST["changePassword"])){
 //Fonction qui permet d'avoir les infos d'un user par son ID
 function getProfil($id){
     return getUserById($id);
+}
+
+//Function qui permet de retourner tous les users
+function getAllUsers(){
+    return getAllUser();
 }

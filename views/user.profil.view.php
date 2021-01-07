@@ -16,6 +16,7 @@
     <input name="first_name" value="<?php echo $data["first_name"] ?>" type="text" required>
     <input name="name" value="<?php echo $data["name"] ?>" type="text" required>
     <input name="mail" value="<?php echo $data["mail"] ?>" type="mail" required>
+    <input name="idUser" value="<?php echo $_COOKIE["idUser"] ?>" type="hidden" required>
     <input name="modifyProfil" type="hidden">
     <input value="Enregistrer" type="submit">
 </form>

@@ -13,10 +13,10 @@ $datas = getCars();
 </head>
 <body>
 <h1>Liste des voitures</h1>
-<form method="post" action="../views/location.add.view.php">
     <?php
 
     foreach ($datas as $data){
+        echo '<form method="post" action="../views/location.add.view.php">';
         echo '<ul>';
             echo '<li>Nom :  '.$data["name"].' </li>';
             echo '<li>Couleur : '.$data["color"].' </li>';
@@ -25,12 +25,11 @@ $datas = getCars();
 
         echo '</ul>';
         echo'<input name="car_id" value="'.$data["id"].'" type="hidden">';
-
+        echo '<input value="Louer" type="submit">
+              </form>';
     }
     ?>
-    <input value="Louer" type="submit">
 
-</form>
 
 
 
