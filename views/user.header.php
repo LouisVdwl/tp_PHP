@@ -31,7 +31,7 @@
                         <a class="dropdown-item" href="../views/user.profil.view.php">Voir mon profil</a>
                         <a class="dropdown-item" href="../views/user.page.view.php">Mes locations</a>
                         <div class="dropdown-divider"></div>
-                        <form method="post" action="../controllers/user.controller.php"><input name="disconnect" type="hidden" class="dropdown-item"><input type="submit" value="Déconnexion"></form>
+                        <form method="post" action="../controllers/user.controller.php"><input name="disconnect" type="hidden"><input type="submit" value="Déconnexion" class="dropdown-item"></form>
                     </div>
                 </li>
             </ul>

@@ -16,21 +16,61 @@
 <?php
     require_once("user.header.php");
 ?>
-<h1>Mon profil</h1>
-<form method="post" action="../controllers/user.controller.php">
-    <input name="first_name" value="<?php echo $data["first_name"] ?>" type="text" required>
-    <input name="name" value="<?php echo $data["name"] ?>" type="text" required>
-    <input name="mail" value="<?php echo $data["mail"] ?>" type="mail" required>
-    <input name="idUser" value="<?php echo $_COOKIE["idUser"] ?>" type="hidden" required>
-    <input name="modifyProfil" type="hidden">
-    <input value="Enregistrer" type="submit">
-</form>
-<form method="post" action="../controllers/user.controller.php">
-    <input name="password" type="password" placeholder="Changer mon mot de passe">
-    <input name="changePassword" type="hidden">
-    <input type="submit" value="Changer le mot de passe">
-</form>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-12 col-lg-10 col-xl-8 mx-auto">
+            <div class="my-4">
+                <ul class="nav nav-tabs mb-4" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="false">Mon profil</a>
+                    </li>
+                </ul>
+                <form method="post" action="../controllers/user.controller.php">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="firstname">Prénom</label>
+                            <input name="first_name" value="<?php echo $data["first_name"] ?>" type="text" class="form-control"  required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="lastname">Nom</label>
+                            <input name="name" value="<?php echo $data["name"] ?>" type="text" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputEmail4">Email</label>
+                        <input name="mail" value="<?php echo $data["mail"] ?>" type="mail" class="form-control" required>
+                    </div>
+            </div>
+
+
+            <input name="idUser" value="<?php echo $_COOKIE["idUser"] ?>" type="hidden" required>
+            <input name="modifyProfil" type="hidden">
+            <button type="submit" class="btn btn-primary">Enregistrer</button>
+            </form>
+            <hr class="my-4" />
+            <div class="row mb-4">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <form method="post" action="../controllers/user.controller.php">
+                            <input name="password" type="password" class="form-control" placeholder="Changer mon mot de passe">
+                            <input name="changePassword" type="hidden">
+                            <input type="submit" class="btn btn-primary" value="Changer le mot de passe">
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+
 </body>
 </html>
+
+
 
 
