@@ -58,8 +58,6 @@
                         </div>
                         <input type="submit" class="btn btn-primary" value="Changer le mot de passe">
                     </form>
-
-
                 </div>
 
             </div>

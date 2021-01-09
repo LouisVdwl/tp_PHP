@@ -260,3 +260,15 @@ input[type=text]::placeholder {
     width:30%;
     margin-bottom: 40px;
 }
+
+.center-65{
+    width: 65%;
+    display: flex;
+    justify-content: center;
+}
+
+.center-100{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}

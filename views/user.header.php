@@ -9,7 +9,7 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="../views/car.list.view.php">Nos voitures <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="../views/car.list.view.php">Nos voitures</a>
                 </li>
                 <?php
                     if(is_admin()){
@@ -31,7 +31,7 @@
                         <a class="dropdown-item" href="../views/user.profil.view.php">Voir mon profil</a>
                         <a class="dropdown-item" href="../views/user.page.view.php">Mes locations</a>
                         <div class="dropdown-divider"></div>
-                        <form method="post" action="../controllers/user.controller.php"><input name="disconnect" type="hidden"><input type="submit" value="Déconnexion" class="dropdown-item"></form>
+                        <a class="dropdown-item" href="../views/user.disconnect.view.php">Déconnexion</a>
                     </div>
                 </li>
             </ul>

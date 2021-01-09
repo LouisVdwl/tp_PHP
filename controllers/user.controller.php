@@ -68,3 +68,8 @@ if(isset($_POST["disconnect"])){
 function is_admin(){
     return isAdmin($_COOKIE["idUser"]);
 }
+
+function disconnect(){
+    setcookie('idUser', '', time());
+    header("Location: ../views/user.connexion.view.php");
+}
