@@ -32,10 +32,11 @@ if(isset($_POST["modifyProfil"])){
         header("Location: ../views/user.profil.view.php");
     }
 
-}//Modification du password du user
+}
+//Modification du password du user
 if(isset($_POST["changePassword"])){
     changePassword($_COOKIE["idUser"], password_hash($_POST["password"], PASSWORD_DEFAULT));
-    echo "ok";
+    echo $_COOKIE["idUser"];
     header("Location: ../views/user.profil.view.php");
 }
 

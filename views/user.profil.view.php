@@ -51,13 +51,14 @@
             <hr class="my-4" />
             <div class="row mb-4">
                 <div class="col-md-6">
-                    <div class="form-group">
-                        <form method="post" action="../controllers/user.controller.php">
+                    <form method="post" action="../controllers/user.controller.php">
+                        <div class="form-group my-3">
                             <input name="password" type="password" class="form-control" placeholder="Changer mon mot de passe">
                             <input name="changePassword" type="hidden">
-                            <input type="submit" class="btn btn-primary" value="Changer le mot de passe">
-                        </form>
-                    </div>
+                        </div>
+                        <input type="submit" class="btn btn-primary" value="Changer le mot de passe">
+                    </form>
+
 
                 </div>
 
