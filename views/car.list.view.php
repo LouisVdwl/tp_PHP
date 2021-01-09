@@ -35,6 +35,10 @@ $isadmin = is_Admin();
                     <input name="view_locations" value="'.$data["id"].'" type="hidden" />
                     <input type="submit" value="Voir les locations"/>
                 </form>
+                <form method="post" action="../views/car.edit.view.php">
+                    <input name="edit_car" value="'.$data["id"].'" type="hidden" />
+                    <input type="submit" value="Editer la voiture"/>
+                </form>
             ';
         }
     }
