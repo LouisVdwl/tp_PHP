@@ -65,3 +65,16 @@ function isAdmin(){
 
     return $result->fetch()[0];
 }
+function modifyCar($color,$name,$mark,$price,$id){
+    $sql = "UPDATE car set name = :name, color = :color, mark = :mark, price = :price WHERE id = :id";
+    $req = connect() -> prepare($sql);
+
+    $req -> bindParam(":color", $color);
+    $req -> bindParam(":name", $name);
+    $req -> bindParam(":mark", $mark);
+    $req -> bindParam(":price", $price);
+    $req -> bindParam(":id", $id);
+
+    $req -> execute();
+    $req -> closeCursor();
+}
