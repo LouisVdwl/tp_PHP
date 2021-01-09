@@ -23,5 +23,22 @@ if(isset($_POST["addCar"])){
 
 function getCars(){
     return listCar();
+}
 
+function getCar($id){
+    return getCarById($id);
+}
+function getLocation($id){
+    return getLocationsOfCar($id);
+}
+
+if(isset($_POST["delete"])) {
+    deleteLocation($_POST["delete"]);
+    header("Location: ../views/car.page.view.php");
+}
+
+
+
+function is_Admin(){
+    return isAdmin();
 }

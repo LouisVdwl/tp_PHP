@@ -1,8 +1,8 @@
 <?php
 
 function connect(){
-    $user = "root";
-    $pass = "";
+    $user = "jojo";
+    $pass = "9706";
 
     try {
         $bdd = new PDO('mysql:host=localhost;dbname=car_location', $user, $pass);

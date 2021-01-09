@@ -93,6 +93,34 @@ function getAllUser(){
     return $result;
 }
 
+function getLocationsOfUser($id){
 
+    $sql = 'SELECT car_id,start_date,end_date,id FROM locations WHERE user_id = '.$id;
+    $datas = connect() -> query($sql) ;
+    $res = array();
+
+    foreach ($datas as $data){
+        $sqlCar = 'SELECT name,color,mark,price FROM car WHERE id ='.$data["car_id"];
+        $dataCar = connect() -> query($sqlCar) -> fetch();
+
+        $res[] = array(
+            "start_date" => $data["start_date"],
+            "end_date" => $data["end_date"],
+            "name" => $dataCar["name"],
+            "color" => $dataCar["color"],
+            "mark" => $dataCar["mark"],
+            "price" => $dataCar["price"],
+            "id" => $data["id"]
+        );
+    }
+    return $res;
+
+}
+function deleteLocation($id){
+    $sql = "DELETE FROM locations WHERE id =".$id;
+    $req = connect() -> prepare($sql);
+    $req -> execute();
+    $req -> closeCursor();
+}
 
 

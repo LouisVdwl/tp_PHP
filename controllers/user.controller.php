@@ -48,3 +48,13 @@ function getProfil($id){
 function getAllUsers(){
     return getAllUser();
 }
+function getLocation(){
+    $id = $_COOKIE["idUser"];
+
+    return getLocationsOfUser($id);
+}
+
+if(isset($_POST["delete"])) {
+    deleteLocation($_POST["delete"]);
+    header("Location: ../views/user.page.view.php");
+}

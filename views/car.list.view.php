@@ -1,6 +1,7 @@
 <?php
 require("../controllers/car.controller.php");
 $datas = getCars();
+$isadmin = is_Admin();
 ?>
 
 <!DOCTYPE html>
@@ -27,6 +28,15 @@ $datas = getCars();
         echo'<input name="car_id" value="'.$data["id"].'" type="hidden">';
         echo '<input value="Louer" type="submit">
               </form>';
+
+        if (isAdmin()==0){
+            echo '
+                <form method="post" action="../views/car.page.view.php">
+                    <input name="view_locations" value="'.$data["id"].'" type="hidden" />
+                    <input type="submit" value="Voir les locations"/>
+                </form>
+            ';
+        }
     }
     ?>
 
