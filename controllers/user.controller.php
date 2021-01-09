@@ -1,6 +1,6 @@
 <?php
 
-require("../models/user.model.php");
+require_once("../models/user.model.php");
 
 //Ajout d'un user
 if(isset($_POST["inscription"])){
@@ -57,4 +57,13 @@ function getLocation(){
 if(isset($_POST["delete"])) {
     deleteLocation($_POST["delete"]);
     header("Location: ../views/user.page.view.php");
+}
+
+if(isset($_POST["disconnect"])){
+    unset($_COOKIE["idUser"]);
+    header("Location: ../views/user.connexion.php");
+}
+
+function is_admin(){
+    return isAdmin($_COOKIE["idUser"]);
 }

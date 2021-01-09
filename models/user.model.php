@@ -123,4 +123,11 @@ function deleteLocation($id){
     $req -> closeCursor();
 }
 
+function isAdmin($id){
+    $sql = "SELECT is_admin FROM user WHERE id = " . $id;
+    $result = connect() -> query($sql);
+
+    return $result->fetch()[0];
+}
+
 

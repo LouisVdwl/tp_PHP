@@ -15,7 +15,7 @@ $users = getAllUsers();
     <title> Tous les utilisateurs </title>
 </head>
 <body>
-<h1>Liste des voitures</h1>
+<h1>Liste des utilisateurs</h1>
 <?php
     foreach($users as $data){
         echo '<form method="post" action="../controllers/user.controller.php">
