@@ -20,7 +20,7 @@ Vous créerez les interfaces suivantes :
 - Liste des utilisateurs ✔
 
 ### Édition
-- Édition d'une voiture
+- Édition d'une voiture ✔
 - Edition d'une location ✔
 - Edition d'un utilisateur ✔
 
