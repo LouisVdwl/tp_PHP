@@ -1,6 +1,6 @@
 <?php
 
-require("../controllers/location.controller.php");
+require_once("../controllers/location.controller.php");
 
 $datas = GetLocation();
 $cars = GetCars();
@@ -15,6 +15,9 @@ $cars = GetCars();
     <title> Toutes les locations </title>
 </head>
 <body>
+<?php
+require_once("user.header.php");
+?>
 <h1>Liste des locations</h1>
 <?php
     foreach($datas as $data){

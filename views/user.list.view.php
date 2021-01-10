@@ -1,6 +1,6 @@
 <?php
 
-require("../controllers/user.controller.php");
+require_once("../controllers/user.controller.php");
 
 $users = getAllUsers();
 

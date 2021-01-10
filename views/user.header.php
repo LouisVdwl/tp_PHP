@@ -1,5 +1,5 @@
 <?php
-    require_once("../controllers/user.controller.php");
+    require_once("../controllers/header.controller.php");
 ?>
 <form>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -12,7 +12,7 @@
                     <a class="nav-link" href="../views/car.list.view.php">Nos voitures</a>
                 </li>
                 <?php
-                    if(is_admin()){
+                    if(is_user_admin()){
                         echo '
                         <li class="nav-item">
                             <a class="nav-link" href="../views/user.list.view.php">Liste des utilisateurs</a>

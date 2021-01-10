@@ -1,6 +1,6 @@
 <?php
 
-require("utils.connexionBDD.php");
+require_once("utils.connexionBDD.php");
 
 
 /**

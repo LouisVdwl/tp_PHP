@@ -49,7 +49,7 @@ function getProfil($id){
 function getAllUsers(){
     return getAllUser();
 }
-function getLocation(){
+function getLocations(){
     $id = $_COOKIE["idUser"];
 
     return getLocationsOfUser($id);

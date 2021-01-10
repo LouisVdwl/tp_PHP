@@ -1,5 +1,5 @@
 <?php
-require("../controllers/car.controller.php");
+require_once("../controllers/car.controller.php");
 $datas = getCars();
 $isadmin = is_Admin();
 ?>
@@ -15,6 +15,9 @@ $isadmin = is_Admin();
     <title> Ajouter une voiture de location </title>
 </head>
 <body>
+<?php
+require_once("user.header.php");
+?>
 <h1>Liste des voitures</h1>
     <?php
 

@@ -1,5 +1,5 @@
 <?php
-require("utils.connexionBDD.php");
+require_once("utils.connexionBDD.php");
 /**
  * @param $car_id
  * @param $user_id
