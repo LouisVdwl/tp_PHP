@@ -1,6 +1,7 @@
 <?php
 require_once("utils.connexionBDD.php");
 /**
+ * permet d'ajouter une location
  * @param $car_id
  * @param $user_id
  * @param $duration " in days "
@@ -16,6 +17,11 @@ function addLocation($car_id, $user_id, $start_date, $end_date){
     $stmt -> closeCursor();
 
 }
+
+/**
+ * Retourne la liste des voitures
+ * @return array
+ */
 function listCar(){
     $sql = connect() -> query("SELECT * from car");
     $res = array();
@@ -26,7 +32,10 @@ function listCar(){
     return $res ;
 
 }
-//obtenir toutes les locations
+/**
+ * Retourne la liste de toutes les locations
+ * @return array
+ */
 function getAllLocations(){
     $sql = "SELECT * FROM locations";
     $datas = connect() -> query($sql);
@@ -58,7 +67,10 @@ function getAllLocations(){
 
     return $res ;
 }
-//renvoie true si l'utilisateur courant est admin
+/**
+ * permet de savoir si le user est admin
+ * @return mixed
+ */
 function isAdmin(){
     $id = $_COOKIE["idUser"];
     $sql = "SELECT is_admin FROM user WHERE id = " . $id;
@@ -66,7 +78,15 @@ function isAdmin(){
 
     return $result->fetch()[0];
 }
-function modifyLocation($start_date,$end_date,$car_id,$id){
+
+/**
+ * permet de modifier une location
+ * @param $start_date
+ * @param $end_date
+ * @param $car_id
+ * @param $id
+ */
+function modifyLocation($start_date, $end_date, $car_id, $id){
 
     $sql = "UPDATE locations set start_date = :start_date, end_date = :end_date, car_id = :car_id WHERE id = :id";
     $req = connect() -> prepare($sql);

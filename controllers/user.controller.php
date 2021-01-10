@@ -40,15 +40,27 @@ if(isset($_POST["changePassword"])){
     header("Location: ../views/user.profil.view.php");
 }
 
-//Fonction qui permet d'avoir les infos d'un user par son ID
+/**
+ * permet d'avoir les infos d'un user par son ID
+ * @param $id
+ * @return mixed
+ */
 function getProfil($id){
     return getUserById($id);
 }
 
-//Function qui permet de retourner tous les users
+/**
+ * Retourne la liste de tous les users
+ * @return false|PDOStatement
+ */
 function getAllUsers(){
     return getAllUser();
 }
+
+/**
+ * Retourne la liste des locations d'un user
+ * @return array
+ */
 function getLocations(){
     $id = $_COOKIE["idUser"];
 
@@ -65,10 +77,17 @@ if(isset($_POST["disconnect"])){
     header("Location: ../views/user.connexion.php");
 }
 
+/**
+ * retourne true ou false si user est admin
+ * @return mixed
+ */
 function is_admin(){
     return isAdmin($_COOKIE["idUser"]);
 }
 
+/**
+ * deconnecte l'utilisateur
+ */
 function disconnect(){
     setcookie('idUser', '', time());
     header("Location: ../views/user.connexion.view.php");

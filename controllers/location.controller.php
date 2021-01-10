@@ -24,6 +24,10 @@ if(isset($_POST["modifyLocation"])){
     modifyLocation($start_date,$end_date,$car_id,$id);
     header("Location: ../views/location.list.view.php");
 }
+/**
+ * obtenir toutes les locations si user est admin
+ * @return array
+ */
 function GetLocation(){
 
     if(isAdmin()==1){//si l'utilisateur n'est pas admin on redirige vers la page d'erreur
@@ -32,6 +36,11 @@ function GetLocation(){
         return getAllLocations();
     }
 }
+
+/**
+ * obtenir la liste des voitures
+ * @return array
+ */
 function GetCars(){
     return listCar();
 }

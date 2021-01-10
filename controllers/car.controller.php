@@ -2,10 +2,16 @@
 
 require("../models/car.model.php");
 
+/**
+ * Fonction d'exemple
+ */
 function listCars(){
 	echo "Liste des livres";
 }
 
+/**
+ * Fonction d'exemple
+ */
 function car(){
 	echo "Livre id=".$_GET["id"];
 }
@@ -21,13 +27,28 @@ if(isset($_POST["addCar"])){
 
 }
 
+/**
+ * obtenir la liste des voitures
+ * @return array
+ */
 function getCars(){
     return listCar();
 }
 
+/**
+ * obtenir infos voitures par son id
+ * @param $id
+ * @return mixed
+ */
 function getCar($id){
     return getCarById($id);
 }
+
+/**
+ * obtenir infos locations par son id
+ * @param $id
+ * @return array
+ */
 function getLocation($id){
     return getLocationsOfCar($id);
 }
@@ -47,6 +68,10 @@ if(isset($_POST["modifyCar"])){
     header("Location: ../views/car.list.view.php");
 }
 
+/**
+ * retourne si user est admin
+ * @return mixed
+ */
 function is_Admin(){
     return isAdmin();
 }

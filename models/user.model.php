@@ -56,6 +56,11 @@ function connexionUser($mail, $pass){
     return $ret;
 }
 
+/**
+ * Retourne la liste d'infos d'un user par son id
+ * @param $idUser
+ * @return mixed
+ */
 function getUserById($idUser){
     $id = $idUser;
     $sql = "SELECT * FROM user WHERE id = " . $id;
@@ -63,6 +68,13 @@ function getUserById($idUser){
     return $result -> fetch();
 }
 
+/**
+ * permet de modifier un user
+ * @param $id
+ * @param $first_name
+ * @param $name
+ * @param $mail
+ */
 function modifyUser($id, $first_name, $name, $mail){
     $sql = "UPDATE user set first_name = :first_name, name = :name, mail = :mail WHERE id = :id";
     $req = connect() -> prepare($sql);
@@ -76,6 +88,11 @@ function modifyUser($id, $first_name, $name, $mail){
     $req -> closeCursor();
 }
 
+/**
+ * permet de modifier le mot de passe d'un user
+ * @param $id
+ * @param $password
+ */
 function changePassword($id, $password){
     $sql = "UPDATE user set password = :password WHERE id = :id";
     $req = connect() -> prepare($sql);
@@ -87,12 +104,20 @@ function changePassword($id, $password){
     $req -> closeCursor();
 }
 
+/**Retourne la liste de tous les users
+ * @return false|PDOStatement
+ */
 function getAllUser(){
     $sql = "SELECT * FROM user";
     $result = connect() -> query($sql);
     return $result;
 }
 
+/**
+ * Retourne la liste des locations d'un user
+ * @param $id
+ * @return array
+ */
 function getLocationsOfUser($id){
 
     $sql = 'SELECT car_id,start_date,end_date,id FROM locations WHERE user_id = '.$id;
@@ -116,6 +141,11 @@ function getLocationsOfUser($id){
     return $res;
 
 }
+
+/**
+ * permet de supprimer une location
+ * @param $id
+ */
 function deleteLocation($id){
     $sql = "DELETE FROM locations WHERE id =".$id;
     $req = connect() -> prepare($sql);
@@ -123,6 +153,11 @@ function deleteLocation($id){
     $req -> closeCursor();
 }
 
+/**
+ * permet de savoir si un user est admin
+ * @param $id
+ * @return mixed
+ */
 function isAdmin($id){
     $sql = "SELECT is_admin FROM user WHERE id = " . $id;
     $result = connect() -> query($sql);
