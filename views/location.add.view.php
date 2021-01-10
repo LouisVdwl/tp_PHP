@@ -27,7 +27,7 @@ require_once("user.header.php");
     ?>
 
     <input name="addLocation" type="hidden">
-    <input value="Ajouter" type="submit">
+    <input value="Ajouter" type="submit" class="btn btn-primary">
 </form>
 </body>
 </html>-

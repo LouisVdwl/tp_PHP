@@ -32,7 +32,6 @@ function getAllLocations(){
     $datas = connect() -> query($sql);
     $res = array();
 
-
     foreach ($datas as $data){
         $idCar = $data["car_id"];
         $idUser = $data["user_id"];

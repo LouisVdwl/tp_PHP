@@ -23,6 +23,7 @@ $datas =getLocations();
 require_once("user.header.php");
 ?>
 <h1>Liste de vos locations</h1>
+<div class="container">
 <?php
     foreach ($datas as $data){
         echo'
@@ -30,15 +31,19 @@ require_once("user.header.php");
             <ul>
                 <li>Date de debut'." : ".$data["start_date"].'</li>
                 <li>Date de fin'." : ".$data["end_date"].'</li>
-                <li>Couleur de la voiture'." : ".$data["color"].'</li>
+                <li><input type="color" value='.$data["color"].' disabled></li>
                 <li>Marque de la voiture'." : ".$data["mark"].'</li>
-                <li>Prix de la location'." : ".$data["price"].'</li>
+                <li>Prix de la location'." : ".$data["price"].' €</li>
             </ul>
             <form method="post" action="../controllers/user.controller.php">
                 <input name="delete" value="'.$data["id"].'" type="hidden" />
-                <input type="submit" value="Supprimer"/>
+                <input type="submit" value="Supprimer" class="btn btn-primary"/>
             </form>
         ';
-}
+}?>
+</div>
+</body>
+</html>
+
 
 

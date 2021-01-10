@@ -23,6 +23,7 @@ $datas  =getLocation($_POST["view_locations"]);
 require_once("user.header.php");
 ?>
 <h1>Liste des locations </h1>
+<div class="container">
 <?php
 foreach ($datas as $data){
     echo'
@@ -35,9 +36,13 @@ foreach ($datas as $data){
             </ul>
             <form method="post" action="../controllers/user.controller.php">
                 <input name="delete" value="'.$data["id"].'" type="hidden" />
-                <input type="submit" value="Supprimer"/>
+                <input type="submit" value="Supprimer" class="btn btn-primary"/>
             </form>
         ';
 }
+?>
+</div>
+</body>
+</html>
 
 
