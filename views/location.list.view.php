@@ -1,11 +1,11 @@
 <?php
 
 require_once("../controllers/location.controller.php");
+require_once("../controllers/header.controller.php");
 
 $datas = GetLocation();
 $cars = GetCars();
 
-print_r($datas);
 ?>
 
 <!DOCTYPE html>

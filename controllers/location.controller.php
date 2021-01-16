@@ -30,8 +30,8 @@ if(isset($_POST["modifyLocation"])){
  */
 function GetLocation(){
 
-    if(isAdmin()==1){//si l'utilisateur n'est pas admin on redirige vers la page d'erreur
-        header("page d'erreur");
+    if(isAdmin()==0){//si l'utilisateur n'est pas admin on redirige vers la page d'erreur
+        echo "Il faut être admin !";
     }else{
         return getAllLocations();
     }

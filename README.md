@@ -1,9 +1,5 @@
 # M3104 - TP MVC
 
-Compte admin => admin@admin.gmail mdp admin
-
-## Le routage n'est pas fonctionnel comme dit sur discord donc il n'est pas présent sur cette version
-
 L'objectif de ce TP est de mettre en pratique les diverses compétences acquises au cours du module 3104.
 
 La plupart des notions abordées seront nécessaires, mais la nouvelle notion à mettre en place est le pattern MVC.
